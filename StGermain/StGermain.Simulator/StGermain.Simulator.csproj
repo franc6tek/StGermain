@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="3.3.0-preview-2025-11-13-131001-e3825e94" />
+    <PackageReference Include="OpenSilver.Simulator" Version="3.3.0-preview-2025-11-13-131001-e3825e94" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StGermain\StGermain.csproj" />
+  </ItemGroup>
+
+</Project>

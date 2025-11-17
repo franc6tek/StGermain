@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <DefineSilverlight>true</DefineSilverlight>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="3.3.0-preview-2025-11-13-131001-e3825e94" />
+    <PackageReference Include="OpenSilver.Themes.Modern" Version="3.3.0-preview-2025-08-04-062345-8b9c52ca" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Accueil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Chambres.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Contact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Galerie.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\hotel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Restaurant.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Services.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Tarifs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="Helper\Constant.cs" />
+    <Compile Include="MainPage.xaml.cs" />
+    <Compile Include="Pages\Accueil.xaml.cs" />
+    <Compile Include="Pages\Chambres.xaml.cs" />
+    <Compile Include="Pages\Contact.xaml.cs" />
+    <Compile Include="Pages\Galerie.xaml.cs" />
+    <Compile Include="Pages\hotel.xaml.cs" />
+    <Compile Include="Pages\Restaurant.xaml.cs" />
+    <Compile Include="Pages\Services.xaml.cs" />
+    <Compile Include="Pages\Tarifs.xaml.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Ressources\Images\contact-us.png" />
+    <Content Include="Ressources\Images\dinner.png" />
+    <Content Include="Ressources\Images\double-bed.png" />
+    <Content Include="Ressources\Images\home.png" />
+    <Content Include="Ressources\Images\image-galery.png" />
+    <Content Include="Ressources\Images\location.png" />
+    <Content Include="Ressources\Images\StGermainBlack-nobg.png" />
+    <Content Include="Ressources\Images\support.png" />
+    <Content Include="Ressources\Images\wallet.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Ressources\Styles\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="StGermain.Pages.hotel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:StGermain.Pages">
+    
+    <Grid Background="AntiqueWhite">
+        <TextBlock Text="Découvrez notre hôtel St Germain, un havre de confort et d'élégance!" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   FontSize="24" 
+                   Foreground="SaddleBrown"/>
+    </Grid>
+</Page>
