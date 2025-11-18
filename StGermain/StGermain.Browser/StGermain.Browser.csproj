@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="stgermainico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.0" PrivateAssets="all" />
     <PackageReference Include="OpenSilver" Version="3.3.0-preview-2025-11-13-131001-e3825e94" />
@@ -18,7 +22,7 @@
 
   <PropertyGroup>
     <DisableImplicitNamespaceImports>True</DisableImplicitNamespaceImports>
-    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
+    <ApplicationIcon>stgermainico.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
