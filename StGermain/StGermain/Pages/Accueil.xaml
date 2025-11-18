@@ -23,7 +23,7 @@
                        Width="250"
                        Margin="10"    
                        />
-                <TextBlock Text="Idéal pour un séjour en famille, entre amis pu professionnel." 
+                <TextBlock Text="Idéal pour un séjour en famille, entre amis ou professionnel." 
                      TextWrapping="Wrap"
                      HorizontalAlignment="Center" 
                      VerticalAlignment="Center" 
