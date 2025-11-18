@@ -69,6 +69,7 @@
     <Content Include="Ressources\Icon\image-galery.png" />
     <Content Include="Ressources\Icon\location.png" />
     <Content Include="Ressources\Icon\StGermainBlack-nobg.png" />
+    <Content Include="Ressources\Icon\stgermainico.ico" />
     <Content Include="Ressources\Icon\support.png" />
     <Content Include="Ressources\Icon\wallet.png" />
   </ItemGroup>
