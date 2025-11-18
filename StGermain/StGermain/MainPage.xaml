@@ -24,8 +24,8 @@
             <Image Source="/StGermain;component/Ressources/Icon/StGermainBlack-nobg.png" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" 
-                   Height="150"
-                   Width="150"/>
+                   Height="100"
+                   Width="100"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Background="Black">
             <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
