@@ -62,6 +62,11 @@
   <ItemGroup>
     <Content Include="Images\Accueil\Olembe.jpg" />
     <Content Include="Images\Accueil\StadeOlembe.png" />
+    <Content Include="Images\Chambres\ChambreDouble.png" />
+    <Content Include="Images\Chambres\ChambreSimple.png" />
+    <Content Include="Images\Chambres\ChambreSuperieur.png" />
+    <Content Include="Images\Chambres\Suite.png" />
+    <Content Include="Images\Hotel\Hotel.png" />
     <Content Include="Ressources\Icon\contact-us.png" />
     <Content Include="Ressources\Icon\dinner.png" />
     <Content Include="Ressources\Icon\double-bed.png" />
