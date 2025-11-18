@@ -21,7 +21,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Background="Black" Orientation="Vertical">
-            <Image Source="/StGermain;component/Ressources/Images/StGermainBlack-nobg.png" 
+            <Image Source="/StGermain;component/Ressources/Icon/StGermainBlack-nobg.png" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" 
                    Height="150"
@@ -30,7 +30,7 @@
         <StackPanel Grid.Row="1" Background="Black">
             <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Image Source="/StGermain;component/Ressources/Images/home.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/home.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
                            Height="30"
@@ -42,7 +42,7 @@
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/location.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/location.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
                            Height="30"
@@ -54,7 +54,7 @@
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/double-bed.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/double-bed.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
                            Height="30"
@@ -66,7 +66,7 @@
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/wallet.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/wallet.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
                            Height="30"
@@ -78,7 +78,7 @@
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/support.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/support.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
                            Height="30"
@@ -90,7 +90,7 @@
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/image-galery.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/image-galery.png" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center" 
                         Height="30"
@@ -102,7 +102,7 @@
                         HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/contact-us.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/contact-us.png" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center" 
                         Height="30"
@@ -114,7 +114,7 @@
                         HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5">
-                    <Image Source="/StGermain;component/Ressources/Images/dinner.png" 
+                    <Image Source="/StGermain;component/Ressources/Icon/dinner.png" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center" 
                         Height="30"

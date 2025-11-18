@@ -60,15 +60,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Ressources\Images\contact-us.png" />
-    <Content Include="Ressources\Images\dinner.png" />
-    <Content Include="Ressources\Images\double-bed.png" />
-    <Content Include="Ressources\Images\home.png" />
-    <Content Include="Ressources\Images\image-galery.png" />
-    <Content Include="Ressources\Images\location.png" />
-    <Content Include="Ressources\Images\StGermainBlack-nobg.png" />
-    <Content Include="Ressources\Images\support.png" />
-    <Content Include="Ressources\Images\wallet.png" />
+    <Content Include="Images\Accueil\Olembe.jpg" />
+    <Content Include="Images\Accueil\StadeOlembe.png" />
+    <Content Include="Ressources\Icon\contact-us.png" />
+    <Content Include="Ressources\Icon\dinner.png" />
+    <Content Include="Ressources\Icon\double-bed.png" />
+    <Content Include="Ressources\Icon\home.png" />
+    <Content Include="Ressources\Icon\image-galery.png" />
+    <Content Include="Ressources\Icon\location.png" />
+    <Content Include="Ressources\Icon\StGermainBlack-nobg.png" />
+    <Content Include="Ressources\Icon\support.png" />
+    <Content Include="Ressources\Icon\wallet.png" />
   </ItemGroup>
 
   <ItemGroup>
