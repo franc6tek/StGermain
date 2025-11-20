@@ -80,6 +80,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Images\Galerie\" />
+    <Folder Include="Images\Services\" />
+    <Folder Include="Images\Tarifs\" />
     <Folder Include="Model\" />
     <Folder Include="Ressources\Styles\" />
   </ItemGroup>

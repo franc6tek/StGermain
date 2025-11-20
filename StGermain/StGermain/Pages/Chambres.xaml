@@ -31,6 +31,7 @@
                     <Border Grid.Column="0">
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/ChambreSimple.png" 
+                                        Stretch="Fill" 
                             />
                         </Border.Background>
                         <TextBlock Text="Chambre Simple!" 
@@ -71,7 +72,7 @@
                     <Border Grid.Column="0">
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/ChambreDouble.png" 
-                               Stretch="UniformToFill" 
+                               Stretch="Fill" 
                                />
                         </Border.Background>
                         <StackPanel Padding="10">
@@ -111,7 +112,7 @@
                     <Border Grid.Column="0">
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/ChambreSuperieur.png" 
-                               Stretch="UniformToFill" 
+                               Stretch="Fill" 
                                />
                         </Border.Background>
                         <StackPanel Padding="10">
@@ -154,7 +155,7 @@
                     <Border Grid.Column="0">
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/Suite.png" 
-                               Stretch="UniformToFill" 
+                               Stretch="Fill" 
                                />
                         </Border.Background>
                         <StackPanel Padding="10">
@@ -173,7 +174,7 @@
                     </Border>
                     <TextBlock Grid.Column="1" TextWrapping="Wrap"
                                Text="Nos suites offrent une vue panoramique sur le stade olimbé, 
-                                     Vous aurez à disposition des appartements allant de type T2 dans 
+                                     Vous aurez à disposition des appartements de type T2 dans 
                                      le but de vous accueillir dans les meilleures conditions en famille, 
                                      entre amis ou dans le  cadre de vos déplacements professionnels.
                                      Ces appartements sont aménagés d'une à trois chambres confortables 
