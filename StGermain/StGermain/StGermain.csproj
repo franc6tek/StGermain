@@ -66,6 +66,16 @@
     <Content Include="Images\Chambres\ChambreSimple.png" />
     <Content Include="Images\Chambres\ChambreSuperieur.png" />
     <Content Include="Images\Chambres\Suite.png" />
+    <Content Include="Images\Galerie\image1.png" />
+    <Content Include="Images\Galerie\image10.png" />
+    <Content Include="Images\Galerie\image2.png" />
+    <Content Include="Images\Galerie\image3.png" />
+    <Content Include="Images\Galerie\image4.png" />
+    <Content Include="Images\Galerie\image5.png" />
+    <Content Include="Images\Galerie\image6.png" />
+    <Content Include="Images\Galerie\image7.png" />
+    <Content Include="Images\Galerie\image8.png" />
+    <Content Include="Images\Galerie\image9.png" />
     <Content Include="Images\Hotel\Hotel.png" />
     <Content Include="Ressources\Icon\contact-us.png" />
     <Content Include="Ressources\Icon\dinner.png" />
@@ -80,7 +90,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\Galerie\" />
     <Folder Include="Images\Services\" />
     <Folder Include="Images\Tarifs\" />
     <Folder Include="Model\" />

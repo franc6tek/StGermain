@@ -17,11 +17,32 @@ namespace StGermain.Pages
         public Galerie()
         {
             this.InitializeComponent();
+            
         }
 
         // Executes when the user navigates to this page.
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var image = (sender as Button).Background as ImageBrush;
+            if (image != null && image.ImageSource != null)
+            {
+                var fullScreenWindow = new ChildWindow
+                {
+                    //Background = Brushes.Black,
+                    Content = new Image
+                    {
+                        Source = image.ImageSource,
+                        Stretch = Stretch.Uniform
+                    }
+                };
+                fullScreenWindow.IsModal = true;
+                fullScreenWindow.MouseLeftButtonUp += (s, args) => fullScreenWindow.Close();
+                fullScreenWindow.Show();
+            }
         }
     }
 }
