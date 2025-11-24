@@ -3,12 +3,64 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
-    
-    <Grid Background="RosyBrown">
-        <TextBlock Text="Plongez dans la galerie de l'hôtel St Germain et découvrez son charme unique!" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center" 
-                   FontSize="24" 
-                   Foreground="WhiteSmoke"/>
-    </Grid>
+
+    <ScrollViewer Background="SaddleBrown">
+        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="images">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image1.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image2.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image3.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image4.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image5.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image6.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image7.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image8.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image9.png"/>
+                </Button.Background>
+            </Button>
+            <Button Width="250" Height="200" HorizontalAlignment="Center" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Galerie/image10.png"/>
+                </Button.Background>
+            </Button>
+        </ListBox>
+    </ScrollViewer>
 </Page>
