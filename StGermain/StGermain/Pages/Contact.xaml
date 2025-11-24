@@ -6,15 +6,40 @@
 
     <ScrollViewer Background="SaddleBrown">
         <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
-            <WebBrowser Name="contactWebBrowser" Width="400" Height="600" /> 
-            <TextBlock Text="Contactez-nous à l'hôtel St Germain pour toute demande ou réservation!"
+            <WebBrowser Name="contactWebBrowser" Width="400" Height="600" />
+            <StackPanel>
+                <TextBlock Text="Contactez-nous à l'hôtel St Germain pour toute demande ou réservation!"
                        TextWrapping="Wrap"
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Center" 
                        FontSize="24" 
-                       Foreground="DarkCyan"
+                       Foreground="PaleGoldenrod"
                        Width="400"
-                       Height="600"/>
+                       />
+                <StackPanel Margin="5">
+                    <TextBlock Text="Nom:"
+                               FontFamily="Segoe Print"
+                               FontSize="18" 
+                               Foreground="PaleGoldenrod"/>
+                    <TextBox x:Name="NameTextBox" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Email:"
+                               FontFamily="Segoe Print"
+                               FontSize="18" 
+                               Foreground="PaleGoldenrod"/>
+                    <TextBox x:Name="EmailTextBox" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Message:"
+                               FontFamily="Segoe Print"
+                               FontSize="18" 
+                               Foreground="PaleGoldenrod"/>
+                    <TextBox x:Name="MessageTextBox" Margin="0,5,0,10" AcceptsReturn="True" Height="80"/>
+
+                    <Button Content="Envoyer" Click="SendButton_Click" Width="100" HorizontalAlignment="Center"/>
+
+                    <TextBlock x:Name="StatusTextBlock" Margin="0,10,0,0" Foreground="Red" FontSize="20" TextWrapping="Wrap"/>
+                </StackPanel>
+            </StackPanel>
         </WrapPanel>
     </ScrollViewer>
 </Page>

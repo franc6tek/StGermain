@@ -1,7 +1,9 @@
-﻿using System;
+﻿using StGermain.Helper;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,11 +20,7 @@ namespace StGermain.Pages
         public Contact()
         {
             this.InitializeComponent();
-            //string mapIframe = "<iframe width='100%' height='100%' " +
-            //           "src='https://www.google.com/maps/embed?pb=...'></iframe>";
-            //contactWebBrowser. = mapIframe;
             AddMaps();
-            //contactWebBrowser.Navigate(new Uri("https://www.google.com/maps/@48.8486087,2.2203844,2088m"));
         }
 
         private void AddMaps()
@@ -47,6 +45,34 @@ namespace StGermain.Pages
         // Executes when the user navigates to this page.
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private async void SendButton_Click(object sender, RoutedEventArgs e)
+        {
+            string name = NameTextBox.Text;
+            string email = EmailTextBox.Text;
+            string message = MessageTextBox.Text;
+
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(message))
+            {
+                StatusTextBlock.Text = "Veuillez remplir tous les champs.";
+                return;
+            }
+
+            try
+            {
+                await EnvoyerEmailHelper.EnvoyerEmailMailerSend(email, name, message);
+            }
+            catch (Exception ex)
+            {
+                StatusTextBlock.Text = "Erreur réseau: " + ex.Message;
+            }
+            finally
+            {
+                NameTextBox.Text = string.Empty;
+                EmailTextBox.Text = string.Empty;
+                MessageTextBox.Text = string.Empty;
+            }
         }
     }
 }
