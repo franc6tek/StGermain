@@ -3,6 +3,7 @@ using StGermain.ViewModel;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 
 namespace StGermain
 {
@@ -51,6 +52,40 @@ namespace StGermain
         private void LoadRestaurantClick(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(new Uri("/Pages/Restaurant.xaml", UriKind.Relative));
+        }
+
+        private void WrapPanel_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (MenuBar.ActualWidth <= 460)
+            {
+                if (MenuDeroulant.Visibility == Visibility.Collapsed)
+                {
+                    home.Visibility = Visibility.Hidden;
+                    location.Visibility = Visibility.Hidden;
+                    doublebed.Visibility = Visibility.Hidden;
+                    wallet.Visibility = Visibility.Hidden;
+                    support.Visibility = Visibility.Hidden;
+                    image.Visibility = Visibility.Hidden;
+                    contact.Visibility = Visibility.Hidden;
+                    dinner.Visibility = Visibility.Hidden;
+                    MenuDeroulant.Visibility = Visibility.Visible;
+                }
+            }
+            else
+            {
+                if (MenuDeroulant.Visibility == Visibility.Visible)
+                {
+                    home.Visibility = Visibility.Visible;
+                    location.Visibility = Visibility.Visible;
+                    doublebed.Visibility = Visibility.Visible;
+                    wallet.Visibility = Visibility.Visible;
+                    support.Visibility = Visibility.Visible;
+                    image.Visibility = Visibility.Visible;
+                    contact.Visibility = Visibility.Visible;
+                    dinner.Visibility = Visibility.Visible;
+                    MenuDeroulant.Visibility = Visibility.Collapsed;
+                }
+            }
         }
     }
 }

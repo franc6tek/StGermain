@@ -6,13 +6,6 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
       Foreground="{DynamicResource Theme_TextBrush}">
-    <!--<Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <local:ResourceStyles />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Page.Resources>-->
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -28,8 +21,32 @@
                    Width="100"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Background="Black">
-            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
-                <StackPanel Margin="5" Orientation="Horizontal">
+            <WrapPanel Name="MenuBar" Orientation="Horizontal" 
+                       HorizontalAlignment="Center" VerticalAlignment="Top" 
+                       SizeChanged="WrapPanel_SizeChanged">
+                <Border x:Name="MenuDeroulant"
+                          Visibility="Collapsed">
+                    <Border.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="Accueil" Click="LoadAccueilClick"/>
+                            <MenuItem Header="Hôtel" Click="LoadHotelClick"/>
+                            <MenuItem Header="Chambres" Click="LoadChambresClick"/>
+                            <MenuItem Header="Tarifs" Click="LoadTarifsClick"/>
+                            <MenuItem Header="Services" Click="LoadServicesClick"/>
+                            <MenuItem Header="Galerie" Click="LoadGalerieClick"/>
+                            <MenuItem Header="Contact" Click="LoadContactClick"/>
+                            <MenuItem Header="Restaurant" Click="LoadRestaurantClick"/>
+                        </ContextMenu>
+                    </Border.ContextMenu>
+                    <Image Source="/StGermain;component/Ressources/Icon/MenuDeroulant.png" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       Height="50"
+                       Width="50"
+                       Margin="5"
+                       />
+                </Border>
+                <StackPanel Margin="5" Orientation="Horizontal" x:Name="home">
                     <Image Source="/StGermain;component/Ressources/Icon/home.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
@@ -41,7 +58,7 @@
                             Click="LoadAccueilClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="location">
                     <Image Source="/StGermain;component/Ressources/Icon/location.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
@@ -53,7 +70,7 @@
                             Click="LoadHotelClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="doublebed">
                     <Image Source="/StGermain;component/Ressources/Icon/double-bed.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
@@ -65,7 +82,7 @@
                             Click="LoadChambresClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="wallet">
                     <Image Source="/StGermain;component/Ressources/Icon/wallet.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
@@ -77,7 +94,7 @@
                             Click="LoadTarifsClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="support">
                     <Image Source="/StGermain;component/Ressources/Icon/support.png" 
                            HorizontalAlignment="Center" 
                            VerticalAlignment="Center" 
@@ -89,7 +106,7 @@
                             Click="LoadServicesClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="image">
                     <Image Source="/StGermain;component/Ressources/Icon/image-galery.png" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center" 
@@ -101,7 +118,7 @@
                         Click="LoadGalerieClick" 
                         HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="contact">
                     <Image Source="/StGermain;component/Ressources/Icon/contact-us.png" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center" 
@@ -113,7 +130,7 @@
                         Click="LoadContactClick" 
                         HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Horizontal" Margin="5" x:Name="dinner">
                     <Image Source="/StGermain;component/Ressources/Icon/dinner.png" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Center" 
