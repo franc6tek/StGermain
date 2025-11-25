@@ -20,127 +20,157 @@
                    Height="100"
                    Width="100"/>
         </StackPanel>
-        <StackPanel Grid.Row="1" Background="Black">
-            <WrapPanel Name="MenuBar" Orientation="Horizontal" 
-                       HorizontalAlignment="Center" VerticalAlignment="Top" 
-                       SizeChanged="WrapPanel_SizeChanged">
-                <Border x:Name="MenuDeroulant"
+        <StackPanel Name="MenuBar" Grid.Row="1" Background="Black" SizeChanged="WrapPanel_SizeChanged">
+            <WrapPanel  Orientation="Horizontal" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Top" 
+                       >
+                <StackPanel x:Name="MenuPhone" Orientation="Horizontal"
                           Visibility="Collapsed">
-                    <Border.ContextMenu>
-                        <ContextMenu>
-                            <MenuItem Header="Accueil" Click="LoadAccueilClick"/>
-                            <MenuItem Header="Hôtel" Click="LoadHotelClick"/>
-                            <MenuItem Header="Chambres" Click="LoadChambresClick"/>
-                            <MenuItem Header="Tarifs" Click="LoadTarifsClick"/>
-                            <MenuItem Header="Services" Click="LoadServicesClick"/>
-                            <MenuItem Header="Galerie" Click="LoadGalerieClick"/>
-                            <MenuItem Header="Contact" Click="LoadContactClick"/>
-                            <MenuItem Header="Restaurant" Click="LoadRestaurantClick"/>
-                        </ContextMenu>
-                    </Border.ContextMenu>
-                    <Image Source="/StGermain;component/Ressources/Icon/MenuDeroulant.png" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       Height="50"
-                       Width="50"
-                       Margin="5"
-                       />
-                </Border>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadAccueilClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/home.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadHotelClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/location.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadChambresClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/double-bed.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadTarifsClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/wallet.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadServicesClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/support.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadGalerieClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/image-galery.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadContactClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/contact-us.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadRestaurantClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/dinner.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
                 <StackPanel Margin="5" Orientation="Horizontal" x:Name="home">
-                    <Image Source="/StGermain;component/Ressources/Icon/home.png" 
-                           HorizontalAlignment="Center" 
-                           VerticalAlignment="Center" 
-                           Height="30"
-                           Width="30"/>
-                    <Button Content="Accueil" 
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadAccueilClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/home.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Accueil" 
                             Background="Black" 
                             Foreground="PaleGoldenrod" 
                             Click="LoadAccueilClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="location">
-                    <Image Source="/StGermain;component/Ressources/Icon/location.png" 
-                           HorizontalAlignment="Center" 
-                           VerticalAlignment="Center" 
-                           Height="30"
-                           Width="30"/>
-                    <Button Content="Hôtel" 
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadHotelClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/location.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Hôtel" 
                             Background="Black" 
                             Foreground="PaleGoldenrod" 
                             Click="LoadHotelClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="doublebed">
-                    <Image Source="/StGermain;component/Ressources/Icon/double-bed.png" 
-                           HorizontalAlignment="Center" 
-                           VerticalAlignment="Center" 
-                           Height="30"
-                           Width="30"/>
-                    <Button Content="Chambres" 
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadChambresClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/double-bed.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Chambres" 
                             Background="Black" 
                             Foreground="PaleGoldenrod" 
                             Click="LoadChambresClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="wallet">
-                    <Image Source="/StGermain;component/Ressources/Icon/wallet.png" 
-                           HorizontalAlignment="Center" 
-                           VerticalAlignment="Center" 
-                           Height="30"
-                           Width="30"/>
-                    <Button Content="Tarifs" 
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadTarifsClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/wallet.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Tarifs" 
                             Background="Black" 
                             Foreground="PaleGoldenrod" 
                             Click="LoadTarifsClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="support">
-                    <Image Source="/StGermain;component/Ressources/Icon/support.png" 
-                           HorizontalAlignment="Center" 
-                           VerticalAlignment="Center" 
-                           Height="30"
-                           Width="30"/>
-                    <Button Content="Services" 
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadServicesClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/support.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Services" 
                             Background="Black" 
                             Foreground="PaleGoldenrod" 
                             Click="LoadServicesClick" 
                             HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="image">
-                    <Image Source="/StGermain;component/Ressources/Icon/image-galery.png" 
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center" 
-                        Height="30"
-                        Width="30"/>
-                    <Button Content="Galerie" 
-                        Background="Black" 
-                        Foreground="PaleGoldenrod" 
-                        Click="LoadGalerieClick" 
-                        HorizontalContentAlignment="Stretch"/>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadGalerieClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/image-galery.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Galerie" 
+                            Background="Black" 
+                            Foreground="PaleGoldenrod" 
+                            Click="LoadGalerieClick" 
+                            HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="contact">
-                    <Image Source="/StGermain;component/Ressources/Icon/contact-us.png" 
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center" 
-                        Height="30"
-                        Width="30"/>
-                    <Button Content="Contact" 
-                        Background="Black" 
-                        Foreground="PaleGoldenrod" 
-                        Click="LoadContactClick" 
-                        HorizontalContentAlignment="Stretch"/>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadContactClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/contact-us.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Contact" 
+                            Background="Black" 
+                            Foreground="PaleGoldenrod" 
+                            Click="LoadContactClick" 
+                            HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="5" x:Name="dinner">
-                    <Image Source="/StGermain;component/Ressources/Icon/dinner.png" 
-                        HorizontalAlignment="Center" 
-                        VerticalAlignment="Center" 
-                        Height="30"
-                        Width="30"/>
-                    <Button Content="Restaurant" 
-                        Background="Black" 
-                        Foreground="PaleGoldenrod" 
-                        Click="LoadRestaurantClick" 
-                        HorizontalContentAlignment="Stretch"/>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30" Click="LoadRestaurantClick">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/dinner.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button 
+                            Content="Restaurant" 
+                            Background="Black" 
+                            Foreground="PaleGoldenrod" 
+                            Click="LoadRestaurantClick" 
+                            HorizontalContentAlignment="Stretch"/>
                 </StackPanel>
             </WrapPanel>
         </StackPanel>
