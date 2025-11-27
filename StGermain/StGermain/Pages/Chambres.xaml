@@ -23,12 +23,8 @@
                        Foreground="white"
                        Margin="10"/>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-                <Grid Background="SaddleBrown" Margin="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Border Grid.Column="0">
+                <WrapPanel Background="SaddleBrown" Margin="5">
+                    <Border>
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/ChambreSimple.png" 
                                         Stretch="Fill" 
@@ -46,30 +42,20 @@
                                    Margin="10"    
                                        />
                     </Border>
-                    <TextBlock Grid.Column="1" TextWrapping="Wrap"
-                               Text="Les chambres simple offrent des chambres spacieuses et
-                                     bien équipées pour passer un séjour agréable et reposant 
-                                     à nos clients.Ces chambres sont aménagées avec un lit 
-                                     queen-size confortable, un bureau, une télévision à écran plat, 
-                                     un coffre-fort, un frigidaire top,d’une bouilloire, 
-                                     d’un accès Internet haut débit et d’une climatisation. 
-                                     La décoration et les meubles sont de style moderne et élégant, 
-                                     créant ainsi une atmosphère chaleureuse et accueillante.
-                                     Profitez de la connexion Wi-Fi gratuite accessible dans toutes 
-                                     nos chambres ainsi que dans toutes les parties communes de l'hôtel." 
+                    <TextBlock MaxWidth="500"
+                               TextWrapping="Wrap"
+                               Text="Les chambres simple offrent des chambres spacieuses et bien équipées pour passer un séjour agréable et reposant à nos clients.Ces chambres sont aménagées avec un lit queen-size confortable, un bureau, une télévision à écran plat, 
+                                     un coffre-fort, un frigidaire top,d’une bouilloire, d’un accès Internet haut débit et d’une climatisation. La décoration et les meubles sont de style moderne et élégant, créant ainsi une atmosphère chaleureuse et accueillante.
+                                     Profitez de la connexion Wi-Fi gratuite accessible dans toutes nos chambres ainsi que dans toutes les parties communes de l'hôtel." 
                                HorizontalAlignment="Left" 
                                VerticalAlignment="Center" 
                                FontFamily="Segoe Print"
                                FontSize="18" 
                                Foreground="PaleGoldenrod"
                                Margin="10"/>
-                </Grid>
-                <Grid Background="SaddleBrown" Margin="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Border Grid.Column="0">
+                </WrapPanel>
+                <WrapPanel Background="SaddleBrown" Margin="5">
+                    <Border>
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/ChambreDouble.png" 
                                Stretch="Fill" 
@@ -89,27 +75,19 @@
                               />
                         </StackPanel>
                     </Border>
-                    <TextBlock Grid.Column="1" TextWrapping="Wrap"
-                               Text="Les chambres Double offrent tout le confort dont vous avez besoin. 
-                                    Ces chambres sont aménagées avec un lit King size ou deux lits 
-                                    simples, selon vos préférences, ainsi qu'un salon spacieux. 
-                                    Pour plus de flexibilité, la chambre Executive peut accueillir 
-                                    une personne supplémentaire tout en gardant un grand espace commun.
-                                    Profitez de la connexion Wi-Fi gratuite accessible dans toutes nos 
-                                    chambres ainsi que dans toutes les parties communes de l'hôtel. " 
+                    <TextBlock MaxWidth="500"
+                               TextWrapping="Wrap"
+                               Text="Les chambres Double offrent tout le confort dont vous avez besoin.Ces chambres sont aménagées avec un lit King size ou deux lits simples, selon vos préférences, ainsi qu'un salon spacieux.Pour plus de flexibilité, la chambre Executive peut accueillir 
+                                    une personne supplémentaire tout en gardant un grand espace commun.Profitez de la connexion Wi-Fi gratuite accessible dans toutes nos chambres ainsi que dans toutes les parties communes de l'hôtel. " 
                                HorizontalAlignment="Left" 
                                VerticalAlignment="Center" 
                                FontFamily="Segoe Print"
                                FontSize="18" 
                                Foreground="PaleGoldenrod"
                                Margin="10"/>
-                </Grid>
-                <Grid Background="SaddleBrown" Margin="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Border Grid.Column="0">
+                </WrapPanel>
+                <WrapPanel Background="SaddleBrown" Margin="5">
+                    <Border>
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/ChambreSuperieur.png" 
                                Stretch="Fill" 
@@ -129,30 +107,20 @@
                               />
                         </StackPanel>
                     </Border>
-                    <TextBlock Grid.Column="1" TextWrapping="Wrap"
-                               Text="Les chambres supérieur offrent de plus grands espaces,
-                                     vous disposerez d'un lit King-size spacieux ou deux lits
-                                     simples, et vous aurez la possibilité d'avoir un lit d'appoint 
-                                     pour les familles.
-                                     Ces chambres sont aménagées avec un lit queen-size confortable, 
-                                     un bureau, une télévision à écran plat, un coffre-fort, 
-                                     un frigidaire top,d’une bouilloire, d’un accès Internet haut 
-                                     débit et d’une climatisation. La décoration et les meubles sont 
-                                     de style moderne et élégant, créant ainsi une atmosphère 
-                                     chaleureuse et accueillante." 
+                    <TextBlock MaxWidth="500"
+                               TextWrapping="Wrap"
+                               Text="Les chambres supérieur offrent de plus grands espaces, vous disposerez d'un lit King-size spacieux ou deux lits simples, et vous aurez la possibilité d'avoir un lit d'appoint pour les familles.
+                                     Ces chambres sont aménagées avec un lit queen-size confortable, un bureau, une télévision à écran plat, un coffre-fort, un frigidaire top,d’une bouilloire, d’un accès Internet haut débit et d’une climatisation. La décoration et les meubles sont 
+                                     de style moderne et élégant, créant ainsi une atmosphère chaleureuse et accueillante." 
                                HorizontalAlignment="Left" 
                                VerticalAlignment="Center" 
                                FontFamily="Segoe Print"
                                FontSize="18" 
                                Foreground="PaleGoldenrod"
                                Margin="10"/>
-                </Grid>
-                <Grid Background="SaddleBrown" Margin="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Border Grid.Column="0">
+                </WrapPanel>
+                <WrapPanel Background="SaddleBrown" Margin="5">
+                    <Border>
                         <Border.Background>
                             <ImageBrush ImageSource="/StGermain;component/Images/Chambres/Suite.png" 
                                Stretch="Fill" 
@@ -172,18 +140,11 @@
                               />
                         </StackPanel>
                     </Border>
-                    <TextBlock Grid.Column="1" TextWrapping="Wrap"
-                               Text="Nos suites offrent une vue panoramique sur le stade olimbé, 
-                                     Vous aurez à disposition des appartements de type T2 dans 
-                                     le but de vous accueillir dans les meilleures conditions en famille, 
-                                     entre amis ou dans le  cadre de vos déplacements professionnels.
-                                     Ces appartements sont aménagés d'une à trois chambres confortables 
-                                     avec un bureau, une télévision à écran plat, un coffre-fort,
-                                     d’un accès Internet haut débit et d’une climatisation. 
-                                     La décoration et les meubles sont de style moderne et élégant, 
-                                     créant ainsi une atmosphère chaleureuse et accueillante.
-                                     Profitez de la connexion Wi-Fi gratuite accessible dans tous nos 
-                                     appartements ainsi que dans toutes les parties communes de l'hôtel. 
+                    <TextBlock MaxWidth="500"
+                               TextWrapping="Wrap"
+                               Text="Nos suites offrent une vue panoramique sur le stade olimbé, Vous aurez à disposition des appartements de type T2 dans le but de vous accueillir dans les meilleures conditions en famille, entre amis ou dans le  cadre de vos déplacements professionnels.
+                                     Ces appartements sont aménagés d'une à trois chambres confortables avec un bureau, une télévision à écran plat, un coffre-fort, d’un accès Internet haut débit et d’une climatisation.La décoration et les meubles sont de style moderne et élégant, 
+                                     créant ainsi une atmosphère chaleureuse et accueillante.Profitez de la connexion Wi-Fi gratuite accessible dans tous nos appartements ainsi que dans toutes les parties communes de l'hôtel. 
                                " 
                                HorizontalAlignment="Left" 
                                VerticalAlignment="Center" 
@@ -191,7 +152,7 @@
                                FontSize="18" 
                                Foreground="PaleGoldenrod"
                                Margin="10"/>
-                </Grid>
+                </WrapPanel>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
