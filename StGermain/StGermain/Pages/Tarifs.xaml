@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
 
-    <ScrollViewer Background="SaddleBrown">
+    <ScrollViewer Background="SaddleBrown" HorizontalAlignment="Center">
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Découvrez les tarifs compétitifs pour un séjour de rêve!" 
                        TextWrapping="Wrap"

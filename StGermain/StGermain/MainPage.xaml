@@ -6,21 +6,16 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
       Foreground="{DynamicResource Theme_TextBrush}">
-    <Grid >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Background="Black" Orientation="Vertical">
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Vertical">
             <Image Source="/StGermain;component/Ressources/Icon/StGermainBlack-nobg.png" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" 
                    Height="100"
                    Width="100"/>
         </StackPanel>
-        <StackPanel Name="MenuBar" Grid.Row="1" Background="Black" SizeChanged="WrapPanel_SizeChanged">
+        <StackPanel Name="MenuBar" DockPanel.Dock="Top" Background="Black" SizeChanged="WrapPanel_SizeChanged">
             <WrapPanel  Orientation="Horizontal" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Top" 
@@ -174,10 +169,10 @@
                 </StackPanel>
             </WrapPanel>
         </StackPanel>
-        <ScrollViewer Grid.Row="2" >
+        <ScrollViewer DockPanel.Dock="Top">
             <Frame x:Name="CurrentPage"/>
         </ScrollViewer>
-        <StackPanel Grid.Row="3" Background="Black" Orientation="Vertical">
+        <StackPanel DockPanel.Dock="Bottom" Background="Black" Orientation="Vertical">
             <WrapPanel HorizontalAlignment="Center">
                 <StackPanel Orientation="Vertical" Margin="20">
                     <TextBlock TextWrapping="Wrap"
@@ -212,5 +207,6 @@
                 </StackPanel>
             </WrapPanel>
         </StackPanel>
-    </Grid>
+    </DockPanel>
+    </ScrollViewer>
 </Page>

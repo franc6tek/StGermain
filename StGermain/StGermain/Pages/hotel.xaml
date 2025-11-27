@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
 
-    <StackPanel Orientation="Vertical" Background="SaddleBrown" VerticalAlignment="Center" HorizontalAlignment="Center"> 
+    <StackPanel Orientation="Vertical" Background="SaddleBrown" VerticalAlignment="Center" HorizontalAlignment="Center">
         <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Padding="10" MinHeight="600">
                 <StackPanel.Background>
@@ -18,7 +18,7 @@
                            VerticalAlignment="Center" 
                            FontSize="24" 
                            FontFamily="Snap ITC"
-                           Foreground="PaleGoldenrod"
+                           Foreground="White"
                            Margin="10"
                            MaxWidth="400"
                        />

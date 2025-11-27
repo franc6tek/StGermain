@@ -4,10 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
 
-    <Grid Background="AntiqueWhite">
+    <Grid Background="AntiqueWhite" MinHeight="600">
         <Border>
             <Border.Background>
-                <ImageBrush ImageSource="/StGermain;component/Images/Accueil/StadeOlembe.png" 
+                <ImageBrush ImageSource="/StGermain;component/Images/Accueil/Olembe.png" 
                             Stretch="UniformToFill" 
                             />
             </Border.Background>
@@ -18,7 +18,7 @@
                        VerticalAlignment="Center" 
                        FontSize="24" 
                        FontFamily="Snap ITC"
-                       Foreground="PaleGoldenrod"
+                       Foreground="White"
                        Height="200"
                        Width="250"
                        Margin="10"    
@@ -29,7 +29,7 @@
                      VerticalAlignment="Center" 
                      FontSize="24" 
                      FontFamily="Segoe Print"
-                     Foreground="PaleGoldenrod"
+                     Foreground="White"
                      />
             </StackPanel>
         </Border>
