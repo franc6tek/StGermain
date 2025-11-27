@@ -56,24 +56,24 @@ namespace StGermain
 
         private void WrapPanel_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            if (MenuBar.ActualWidth <= 460)
+            if (MenuBar.ActualWidth <= 550)
             {
-                if (MenuDeroulant.Visibility == Visibility.Collapsed)
+                if (MenuPhone.Visibility == Visibility.Collapsed)
                 {
-                    home.Visibility = Visibility.Hidden;
-                    location.Visibility = Visibility.Hidden;
-                    doublebed.Visibility = Visibility.Hidden;
-                    wallet.Visibility = Visibility.Hidden;
-                    support.Visibility = Visibility.Hidden;
-                    image.Visibility = Visibility.Hidden;
-                    contact.Visibility = Visibility.Hidden;
-                    dinner.Visibility = Visibility.Hidden;
-                    MenuDeroulant.Visibility = Visibility.Visible;
+                    home.Visibility = Visibility.Collapsed;
+                    location.Visibility = Visibility.Collapsed;
+                    doublebed.Visibility = Visibility.Collapsed;
+                    wallet.Visibility = Visibility.Collapsed;
+                    support.Visibility = Visibility.Collapsed;
+                    image.Visibility = Visibility.Collapsed;
+                    contact.Visibility = Visibility.Collapsed;
+                    dinner.Visibility = Visibility.Collapsed;
+                    MenuPhone.Visibility = Visibility.Visible;
                 }
             }
             else
             {
-                if (MenuDeroulant.Visibility == Visibility.Visible)
+                if (MenuPhone.Visibility == Visibility.Visible)
                 {
                     home.Visibility = Visibility.Visible;
                     location.Visibility = Visibility.Visible;
@@ -83,7 +83,7 @@ namespace StGermain
                     image.Visibility = Visibility.Visible;
                     contact.Visibility = Visibility.Visible;
                     dinner.Visibility = Visibility.Visible;
-                    MenuDeroulant.Visibility = Visibility.Collapsed;
+                    MenuPhone.Visibility = Visibility.Collapsed;
                 }
             }
         }

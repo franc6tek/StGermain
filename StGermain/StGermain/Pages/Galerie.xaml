@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
 
-    <ScrollViewer Background="SaddleBrown">
+    <ScrollViewer>
         <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="images">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>

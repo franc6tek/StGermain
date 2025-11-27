@@ -4,18 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
 
-    <Grid Background="SaddleBrown">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Border Grid.Column="0">
-            <Border.Background>
-                <ImageBrush ImageSource="/StGermain;component/Images/Hotel/Hotel.png" 
+    <StackPanel Orientation="Vertical" Background="SaddleBrown" VerticalAlignment="Center" HorizontalAlignment="Center"> 
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Padding="10" MinHeight="600">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="/StGermain;component/Images/Hotel/Hotel.png" 
                             Stretch="UniformToFill" 
                             />
-            </Border.Background>
-            <StackPanel Padding="10">
+                </StackPanel.Background>
                 <TextBlock Text="Découvrez notre hôtel, un havre de confort et d'élégance!!" 
                            TextWrapping="Wrap"
                            HorizontalAlignment="Left" 
@@ -23,14 +19,12 @@
                            FontSize="24" 
                            FontFamily="Snap ITC"
                            Foreground="PaleGoldenrod"
-                           Height="200"
-                           Width="250"
-                           Margin="10"    
+                           Margin="10"
+                           MaxWidth="400"
                        />
             </StackPanel>
-        </Border>
-        <StackPanel Grid.Column="1" Orientation="Vertical">
-            <TextBlock TextWrapping="Wrap" 
+            <StackPanel Orientation="Vertical" MaxWidth="500">
+                <TextBlock TextWrapping="Wrap" 
                        Text="Bienvenue dans notre humble établissement!  " 
                        HorizontalAlignment="Left" 
                        VerticalAlignment="Center" 
@@ -38,7 +32,7 @@
                        FontSize="18" 
                        Foreground="PaleGoldenrod"
                        Margin="10"/>
-            <TextBlock TextWrapping="Wrap"
+                <TextBlock TextWrapping="Wrap"
                        Text="Hôtel St Germain" 
                        HorizontalAlignment="Left" 
                        VerticalAlignment="Center" 
@@ -46,7 +40,7 @@
                        FontSize="34" 
                        Foreground="white"
                        Margin="10"/>
-            <TextBlock TextWrapping="Wrap"
+                <TextBlock TextWrapping="Wrap"
                        Text="Situé dans la ville de Yaoundé la capitale du cameroun et plus précisément à Olimbé. Nous vous offrons 20 chambres et 4 suites avec une vue spactaculaire sur le stade." 
                        HorizontalAlignment="Left" 
                        VerticalAlignment="Center" 
@@ -54,7 +48,7 @@
                        FontSize="18" 
                        Foreground="PaleGoldenrod"
                        Margin="10"/>
-            <TextBlock TextWrapping="Wrap"
+                <TextBlock TextWrapping="Wrap"
                        Text="Doté d'un parking et de voiture pour faciliter votre arrivé, nous vous accueillons quelque soit l'heure." 
                        HorizontalAlignment="Left" 
                        VerticalAlignment="Center" 
@@ -62,7 +56,7 @@
                        FontSize="18" 
                        Foreground="PaleGoldenrod"
                        Margin="10"/>
-            <TextBlock TextWrapping="Wrap"
+                <TextBlock TextWrapping="Wrap"
                        Text="Accueil ouvert en continu, 24 heures sur 24 heures." 
                        HorizontalAlignment="Left" 
                        VerticalAlignment="Center"
@@ -70,6 +64,7 @@
                        FontSize="18" 
                        Foreground="PaleGoldenrod"
                        Margin="10"/>
-        </StackPanel>
-    </Grid>
+            </StackPanel>
+        </WrapPanel>
+    </StackPanel>
 </Page>
