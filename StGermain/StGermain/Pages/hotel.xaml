@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:StGermain.Pages">
 
-    <ScrollViewer Background="SaddleBrown" VerticalAlignment="Center" HorizontalAlignment="Center"> 
+    <StackPanel Orientation="Vertical" Background="SaddleBrown" VerticalAlignment="Center" HorizontalAlignment="Center"> 
         <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Padding="10" MinHeight="600">
                 <StackPanel.Background>
@@ -66,5 +66,5 @@
                        Margin="10"/>
             </StackPanel>
         </WrapPanel>
-    </ScrollViewer>
+    </StackPanel>
 </Page>

@@ -174,13 +174,43 @@
                 </StackPanel>
             </WrapPanel>
         </StackPanel>
-        <Frame Grid.Row="2" x:Name="CurrentPage"/>
-        <StackPanel Grid.Row="3" Background="Black">
-            <TextBlock Text="Pied de page" 
-                       Foreground="PaleGoldenrod" 
-                       FontSize="23" Margin="32,32,0,0" 
+        <ScrollViewer Grid.Row="2" >
+            <Frame x:Name="CurrentPage"/>
+        </ScrollViewer>
+        <StackPanel Grid.Row="3" Background="Black" Orientation="Vertical">
+            <WrapPanel HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <TextBlock TextWrapping="Wrap"
+                       Text="Hôtel St Germain" 
                        HorizontalAlignment="Center" 
-                       VerticalAlignment="Center"/>
+                       VerticalAlignment="Center" 
+                       FontSize="24" 
+                       Foreground="PaleGoldenrod"
+                       Margin="2"/>
+                    <TextBlock Text="Situé à Yaoundé dans le quartier Olimbé" 
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       FontSize="14" 
+                       Foreground="white"
+                       Margin="2"/>
+                </StackPanel>
+                <StackPanel Margin="20">
+                    <TextBlock Text="Suivez-nous" 
+                           Foreground="PaleGoldenrod" 
+                           FontSize="24" 
+                           Margin="2" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+                    <TextBlock Text="sur les réseaux sociaux" 
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       FontSize="14" 
+                       Foreground="white"
+                       Margin="2"/>
+                </StackPanel>
+            </WrapPanel>
         </StackPanel>
     </Grid>
 </Page>
