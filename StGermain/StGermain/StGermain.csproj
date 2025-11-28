@@ -83,17 +83,21 @@
     <Content Include="Ressources\Icon\contact-us.png" />
     <Content Include="Ressources\Icon\dinner.png" />
     <Content Include="Ressources\Icon\double-bed.png" />
+    <Content Include="Ressources\Icon\facebook.png" />
     <Content Include="Ressources\Icon\home.png" />
     <Content Include="Ressources\Icon\image-galery.png" />
+    <Content Include="Ressources\Icon\instagram.png" />
     <Content Include="Ressources\Icon\location.png" />
     <Content Include="Ressources\Icon\MenuDeroulant.png" />
     <Content Include="Ressources\Icon\StGermainBlack-nobg.png" />
     <Content Include="Ressources\Icon\stgermainico.ico" />
     <Content Include="Ressources\Icon\support.png" />
+    <Content Include="Ressources\Icon\telephone.png" />
     <Content Include="Ressources\Icon\wallet.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Images\PiedPage\" />
     <Folder Include="Images\Services\" />
     <Folder Include="Images\Tarifs\" />
     <Folder Include="Model\" />

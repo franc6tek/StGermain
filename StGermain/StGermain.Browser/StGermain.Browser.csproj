@@ -29,4 +29,8 @@
     <ProjectReference Include="..\StGermain\StGermain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\resources\stgermain\ressources\icon\" />
+  </ItemGroup>
+
 </Project>

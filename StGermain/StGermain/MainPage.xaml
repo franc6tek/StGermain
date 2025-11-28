@@ -6,7 +6,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
       Foreground="{DynamicResource Theme_TextBrush}">
-    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
         <DockPanel>
             <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Vertical">
             <Image Source="/StGermain;component/Ressources/Icon/StGermainBlack-nobg.png" 
@@ -170,27 +170,42 @@
             </WrapPanel>
         </StackPanel>
         <ScrollViewer DockPanel.Dock="Top">
-            <Frame x:Name="CurrentPage"/>
+                <Frame Background="#faefe0" x:Name="CurrentPage"/>
         </ScrollViewer>
         <StackPanel DockPanel.Dock="Bottom" Background="Black" Orientation="Vertical">
             <WrapPanel HorizontalAlignment="Center">
-                <StackPanel Orientation="Vertical" Margin="20">
-                    <TextBlock TextWrapping="Wrap"
-                       Text="Hôtel St Germain" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="24" 
-                       Foreground="PaleGoldenrod"
-                       Margin="2"/>
-                    <TextBlock Text="Situé à Yaoundé dans le quartier Olimbé" 
-                       TextWrapping="Wrap"
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="14" 
-                       Foreground="white"
-                       Margin="2"/>
-                </StackPanel>
-                <StackPanel Margin="20">
+                    <StackPanel Orientation="Vertical" Margin="20" MinWidth="300">
+                        <TextBlock TextWrapping="Wrap"
+                                   Text="Hôtel St Germain" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="24" 
+                                   Foreground="PaleGoldenrod"
+                                   Margin="2"/>
+                        <TextBlock Text="Situé à Yaoundé dans le quartier Olimbé" 
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Foreground="white"
+                                   Margin="2"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/telephone.png"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBlock 
+                                   Text="00-00-00-00" 
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Foreground="white"
+                                   Margin="2"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="20" MinWidth="300">
                     <TextBlock Text="Suivez-nous" 
                            Foreground="PaleGoldenrod" 
                            FontSize="24" 
@@ -204,8 +219,36 @@
                        FontSize="14" 
                        Foreground="white"
                        Margin="2"/>
-                </StackPanel>
-            </WrapPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/facebook.png"/>
+                                </Button.Background>
+                            </Button>
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/instagram.png"/>
+                                </Button.Background>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Center" MinWidth="300">
+                        <TextBlock TextWrapping="Wrap"
+                                   Text="@ 2025 Famille" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="24" 
+                                   Foreground="PaleGoldenrod"
+                                   Margin="2"/>
+                        <TextBlock Text="Developpé par Francis TEK" 
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Foreground="white"
+                                   Margin="2"/>
+                    </StackPanel>
+                </WrapPanel>
         </StackPanel>
     </DockPanel>
     </ScrollViewer>
