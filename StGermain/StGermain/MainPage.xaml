@@ -6,21 +6,16 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
       Foreground="{DynamicResource Theme_TextBrush}">
-    <Grid >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Background="Black" Orientation="Vertical">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Vertical">
             <Image Source="/StGermain;component/Ressources/Icon/StGermainBlack-nobg.png" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" 
                    Height="100"
                    Width="100"/>
         </StackPanel>
-        <StackPanel Name="MenuBar" Grid.Row="1" Background="Black" SizeChanged="WrapPanel_SizeChanged">
+        <StackPanel Name="MenuBar" DockPanel.Dock="Top" Background="Black" SizeChanged="WrapPanel_SizeChanged">
             <WrapPanel  Orientation="Horizontal" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Top" 
@@ -174,28 +169,43 @@
                 </StackPanel>
             </WrapPanel>
         </StackPanel>
-        <ScrollViewer Grid.Row="2" >
-            <Frame x:Name="CurrentPage"/>
+        <ScrollViewer DockPanel.Dock="Top">
+                <Frame Background="#faefe0" x:Name="CurrentPage"/>
         </ScrollViewer>
-        <StackPanel Grid.Row="3" Background="Black" Orientation="Vertical">
+        <StackPanel DockPanel.Dock="Bottom" Background="Black" Orientation="Vertical">
             <WrapPanel HorizontalAlignment="Center">
-                <StackPanel Orientation="Vertical" Margin="20">
-                    <TextBlock TextWrapping="Wrap"
-                       Text="Hôtel St Germain" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="24" 
-                       Foreground="PaleGoldenrod"
-                       Margin="2"/>
-                    <TextBlock Text="Situé à Yaoundé dans le quartier Olimbé" 
-                       TextWrapping="Wrap"
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       FontSize="14" 
-                       Foreground="white"
-                       Margin="2"/>
-                </StackPanel>
-                <StackPanel Margin="20">
+                    <StackPanel Orientation="Vertical" Margin="20" MinWidth="300">
+                        <TextBlock TextWrapping="Wrap"
+                                   Text="Hôtel St Germain" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="24" 
+                                   Foreground="PaleGoldenrod"
+                                   Margin="2"/>
+                        <TextBlock Text="Situé à Yaoundé dans le quartier Olimbé" 
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Foreground="white"
+                                   Margin="2"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/telephone.png"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBlock 
+                                   Text="00-00-00-00" 
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Foreground="white"
+                                   Margin="2"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="20" MinWidth="300">
                     <TextBlock Text="Suivez-nous" 
                            Foreground="PaleGoldenrod" 
                            FontSize="24" 
@@ -209,8 +219,37 @@
                        FontSize="14" 
                        Foreground="white"
                        Margin="2"/>
-                </StackPanel>
-            </WrapPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/facebook.png"/>
+                                </Button.Background>
+                            </Button>
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="30">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/StGermain;component/Ressources/Icon/instagram.png"/>
+                                </Button.Background>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Center" MinWidth="300">
+                        <TextBlock TextWrapping="Wrap"
+                                   Text="©Copyright 2025 by FRANCISTEK." 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="24" 
+                                   Foreground="PaleGoldenrod"
+                                   Margin="2"/>
+                        <TextBlock Text=" All rights reversed." 
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="14" 
+                                   Foreground="white"
+                                   Margin="2"/>
+                    </StackPanel>
+                </WrapPanel>
         </StackPanel>
-    </Grid>
+    </DockPanel>
+    </ScrollViewer>
 </Page>

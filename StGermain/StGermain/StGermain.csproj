@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="3.3.0-preview-2025-11-20-091135-7fc12058" />
-    <PackageReference Include="OpenSilver.Themes.Modern" Version="3.3.0-preview-2025-08-04-062345-8b9c52ca" />
+    <PackageReference Include="OpenSilver" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
+    <PackageReference Include="OpenSilver.Themes.Modern" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,6 +62,7 @@
 
   <ItemGroup>
     <Content Include="Images\Accueil\Olembe.jpg" />
+    <Content Include="Images\Accueil\Olembe.png" />
     <Content Include="Images\Accueil\StadeOlembe.png" />
     <Content Include="Images\Chambres\ChambreDouble.png" />
     <Content Include="Images\Chambres\ChambreSimple.png" />
@@ -78,20 +79,25 @@
     <Content Include="Images\Galerie\image8.png" />
     <Content Include="Images\Galerie\image9.png" />
     <Content Include="Images\Hotel\Hotel.png" />
+    <Content Include="Images\Restaurant\restaurant.png" />
     <Content Include="Ressources\Icon\contact-us.png" />
     <Content Include="Ressources\Icon\dinner.png" />
     <Content Include="Ressources\Icon\double-bed.png" />
+    <Content Include="Ressources\Icon\facebook.png" />
     <Content Include="Ressources\Icon\home.png" />
     <Content Include="Ressources\Icon\image-galery.png" />
+    <Content Include="Ressources\Icon\instagram.png" />
     <Content Include="Ressources\Icon\location.png" />
     <Content Include="Ressources\Icon\MenuDeroulant.png" />
     <Content Include="Ressources\Icon\StGermainBlack-nobg.png" />
     <Content Include="Ressources\Icon\stgermainico.ico" />
     <Content Include="Ressources\Icon\support.png" />
+    <Content Include="Ressources\Icon\telephone.png" />
     <Content Include="Ressources\Icon\wallet.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Images\PiedPage\" />
     <Folder Include="Images\Services\" />
     <Folder Include="Images\Tarifs\" />
     <Folder Include="Model\" />

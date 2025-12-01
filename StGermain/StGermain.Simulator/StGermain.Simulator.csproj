@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows7.0</TargetFramework>
     <ApplicationIcon>stgermainico.ico</ApplicationIcon>
   </PropertyGroup>
 
@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="3.3.0-preview-2025-11-20-091135-7fc12058" />
-    <PackageReference Include="OpenSilver.Simulator" Version="3.3.0-preview-2025-11-13-131001-e3825e94" />
+    <PackageReference Include="OpenSilver" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
+    <PackageReference Include="OpenSilver.Simulator" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
   </ItemGroup>
 
   <ItemGroup>
