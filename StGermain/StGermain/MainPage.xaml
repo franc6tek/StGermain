@@ -234,13 +234,13 @@
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="20" HorizontalAlignment="Center" MinWidth="300">
                         <TextBlock TextWrapping="Wrap"
-                                   Text="@ 2025 Famille" 
+                                   Text="©Copyright 2025 by FRANCISTEK." 
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 
                                    FontSize="24" 
                                    Foreground="PaleGoldenrod"
                                    Margin="2"/>
-                        <TextBlock Text="Developpé par Francis TEK" 
+                        <TextBlock Text=" All rights reversed." 
                                    TextWrapping="Wrap"
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 
