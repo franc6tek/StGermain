@@ -10,20 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="stgermainico.ico" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.0" PrivateAssets="all" />
+    <PackageReference Include="OpenSilver.WebAssembly" Version="3.4.0-preview-2025-12-02-140153-debe5cbc" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.0" PrivateAssets="all" />
-    <PackageReference Include="OpenSilver" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
-    <PackageReference Include="OpenSilver.WebAssembly" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <DisableImplicitNamespaceImports>True</DisableImplicitNamespaceImports>
-    <ApplicationIcon>stgermainico.ico</ApplicationIcon>
-  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\StGermain\StGermain.csproj" />
