@@ -91,6 +91,8 @@
     <Content Include="Ressources\Icon\MenuDeroulant.png" />
     <Content Include="Ressources\Icon\StGermainBlack-nobg.png" />
     <Content Include="Ressources\Icon\stgermainico.ico" />
+    <Content Include="Ressources\Icon\StGermainLogo-removebg.png" />
+    <Content Include="Ressources\Icon\StGermainLogo.png" />
     <Content Include="Ressources\Icon\support.png" />
     <Content Include="Ressources\Icon\telephone.png" />
     <Content Include="Ressources\Icon\wallet.png" />

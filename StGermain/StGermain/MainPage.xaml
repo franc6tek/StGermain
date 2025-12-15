@@ -9,11 +9,11 @@
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <DockPanel>
             <StackPanel DockPanel.Dock="Top" Background="Black" Orientation="Vertical">
-            <Image Source="/StGermain;component/Ressources/Icon/StGermainBlack-nobg.png" 
+            <Image Source="/StGermain;component/Ressources/Icon/StGermainLogo-removebg.png" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" 
-                   Height="100"
-                   Width="100"/>
+                   Height="118"
+                   Width="272"/>
         </StackPanel>
         <StackPanel Name="MenuBar" DockPanel.Dock="Top" Background="Black" SizeChanged="WrapPanel_SizeChanged">
             <WrapPanel  Orientation="Horizontal" 
