@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
-    <PackageReference Include="OpenSilver.Simulator" Version="3.4.0-preview-2025-11-28-143224-cfd1b264" />
+    <PackageReference Include="OpenSilver" Version="3.4.0-preview-2025-12-15-104156-24142453" />
+    <PackageReference Include="OpenSilver.Simulator" Version="3.4.0-preview-2025-12-15-104156-24142453" />
   </ItemGroup>
 
   <ItemGroup>
